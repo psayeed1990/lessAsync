@@ -6,10 +6,7 @@ export default function Home() {
     const [errData, errDataSet] = useState("");
     useEffect(() => {
         const fetchData = async () => {
-            const data = await apiRequest(
-                "http://srv-captain--baqiudfjth",
-                "GET"
-            );
+            const data = await apiRequest("srv-captain--baqiudfjth", "GET");
             errDataSet(data.message);
         };
         fetchData();
