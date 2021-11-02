@@ -7,7 +7,7 @@ export default function Home() {
     useEffect(() => {
         const fetchData = async () => {
             const data = await apiRequest(
-                "http://srv-captain--baqiudfjth",
+                "http://baqiudfjth.us08.fldrv.com",
                 "GET"
             );
             errDataSet(data.message);
